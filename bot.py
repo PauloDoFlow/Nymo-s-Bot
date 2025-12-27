@@ -7,8 +7,8 @@ intents.members = True
 
 bot = commands.Bot(command_prefix="!", intents=intents)
 
-TOP1_ROLE_ID = 123456789012345678  # ID do cargo Top 1
-CHANNEL_ID = 123456789012345678   # ID do canal de anúncio
+TOP1_ROLE_ID = 1341809784898457714  # ID do cargo Top 1
+CHANNEL_ID = 1343333008127561821   # ID do canal de anúncio
 
 @bot.event
 async def on_ready():
@@ -32,3 +32,4 @@ async def on_member_update(before, after):
         )
 
 bot.run(os.getenv("DISCORD_TOKEN"))
+
